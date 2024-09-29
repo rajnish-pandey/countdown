@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Calendar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Typewriter effect container -->
+    <h5
+      style="
+        font-size: 2rem;
+        text-align: center;
+        background-color: aliceblue;
+        max-width: 60vw;
+      "
+    >
+      <span
+        class="txt-rotate"
+        typing-spped="100"
+        data
+        data-period="2000"
+        data-rotate='["Sikkim Trip Loading * * * * *"]'
+      ></span>
+    </h5>
+    <div class="calendar-container">
+      <div class="calendar" id="calendar"></div>
+    </div>
+    <script src="countdown.js"></script>
+  </body>
+</html>

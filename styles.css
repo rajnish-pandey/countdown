@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  background-image: url("image1.jpeg"); /* Use image1.jpeg as background */
+  background-size: cover; /* Make sure the background covers the entire page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  font-family: "Courier New", Courier, monospace; /* For typewriter look */
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  height: auto; /* Set height to auto to accommodate the full calendar */
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.month {
+  flex: 1;
+  background-color: white;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+  position: relative;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.day {
+  display: inline-block;
+  width: 14%;
+  text-align: center;
+  position: relative;
+  margin: 1%;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.cross {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 30px;
+  color: red;
+  font-weight: bold;
+  text-align: center; /* Center the cross mark horizontally */
+  pointer-events: none; /* Disable interaction with the cross */
+}
+
+/* Glowing effect for December 20th */
+.glow {
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff,
+    0 0 40px #007bff;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Typewriter effect styles */
+.typewriter h1 {
+  font-size: 2rem;
+  overflow: hidden; /* Ensures the content is hidden until animation */
+  border-right: 0.15em solid #007bff; /* Cursor effect */
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #007bff;
+  }
+  100% {
+    box-shadow: 0 0 20px #007bff, 0 0 40px #007bff;
+  }
+}
+
+/* Blinking cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #007bff;
+  }
+}
