@@ -116,7 +116,7 @@ for (let month = 8; month <= 11; month++) {
     }
 
     // Check if the day is the 20th of December (month 11, as JS months are 0-indexed)
-    if (month === 11 && day === 20) {
+    if ((month === 11 && day === 20) || (month === 9 && day === 13)) {
       dayElement.classList.add("glow"); // Add the glow class to December 20th
     }
 
