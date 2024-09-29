@@ -91,3 +91,20 @@ body {
     border-color: #007bff;
   }
 }
+
+/* Media Query for Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .calendar {
+      width: 80%; /* Full width on mobile */
+  }
+
+  .month {
+      flex: 1 1 100%; /* Ensure the month container takes up full width */
+      padding: 5px; /* Adjust padding */
+      margin: 10px 0; /* Adjust margin */
+  }
+
+  .typewriter h1 {
+      font-size: 1.2rem; /* Smaller font size for typewriter on mobile */
+  }
+}
