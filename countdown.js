@@ -87,7 +87,7 @@ for (let month = 8; month <= 11; month++) {
     "default",
     { month: "long" }
   );
-  monthElement.innerHTML = `<h3 style="text-align: center; font-size: 2rem;">${monthName}</h3>`;
+  monthElement.innerHTML = `<h3 style="text-align: center; font-size: 2rem; text-decoration: underline;">${monthName}</h3>`;
 
   // Get the number of days in the month and the starting day
   const daysInMonth = getDaysInMonth(month, startDate.getFullYear());

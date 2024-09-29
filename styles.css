@@ -24,11 +24,13 @@ body {
 .month {
   flex: 1;
   background-color: white;
-  border: 1px solid #ccc;
-  margin: 0 5px;
+  opacity: 0.9;
+  border: 2px solid black;
   position: relative;
+  margin: 0 5px;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Courier New", Courier, monospace;
 }
 
 .day {
@@ -95,16 +97,16 @@ body {
 /* Media Query for Mobile Devices (max-width: 768px) */
 @media (max-width: 768px) {
   .calendar {
-      width: 80%; /* Full width on mobile */
+    width: 80%; /* Full width on mobile */
   }
 
   .month {
-      flex: 1 1 100%; /* Ensure the month container takes up full width */
-      padding: 5px; /* Adjust padding */
-      margin: 10px 0; /* Adjust margin */
+    flex: 1 1 100%; /* Ensure the month container takes up full width */
+    padding: 5px; /* Adjust padding */
+    margin: 10px 0; /* Adjust margin */
   }
 
   .typewriter h1 {
-      font-size: 1.2rem; /* Smaller font size for typewriter on mobile */
+    font-size: 1.2rem; /* Smaller font size for typewriter on mobile */
   }
 }
